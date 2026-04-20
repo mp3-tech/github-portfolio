@@ -20,7 +20,7 @@ function HeroSection({ profile }) {
               width={128}
               height={128}
               alt={profile.name}
-              className="rounded-full transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+              className="rounded-full transition-all duration-1000 hover:scale-110 cursor-pointer"
             />
           </div>
           <p className="text-gray-300 text-sm lg:text-base my-4 lg:my-6 text-center">
