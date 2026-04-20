@@ -1,6 +1,6 @@
 export const userData = {
   githubUser: 'mp3-tech', 
-  devUsername: "鄧凱謙 (Kai-Chien Teng)",
+  devUsername: "", // 先設為空字串，防止它去抓 Dev.to 的部落格資料導致報錯
   name: "鄧凱謙 (Kai-Chien Teng)",
   designation: "Software Engineer / Information Organization Specialist",
   github: 'https://github.com/mp3-tech', 
@@ -9,20 +9,17 @@ export const userData = {
   address: 'Taiwan',
   description: "資圖系背景的軟體開發者，擅長 PID 控制、n8n 自動化與資訊組織。",
   resumeUrl: "https://drive.google.com/file/d/1JTIlvBaNX7q4mSlPo9y3yXnVApGP68On/view?usp=sharing", 
-  
-  // 這是最重要的部分：補齊所有可能的社交與認證欄位
+  googleAnalyticsId: null, // 補上這個，防止 GA 元件報錯
+
   socialLinks: {
     github: 'https://github.com/mp3-tech',
     instagram: '',
     twitter: '',
     linkedin: '',
     facebook: '',
-    stackOverflow: '',
-    leetcode: '',
-    devTo: '',
   },
 
-  // 有些模板需要這個結構來防止 auth 報錯
+  // 補上這個結構，解決 auth 報錯
   contactsData: {
     email: '61710mp3@gmail.com',
     phone: '',
@@ -32,30 +29,20 @@ export const userData = {
     linkedIn: '',
     twitter: '',
     stackOverflow: '',
-    devUsername: "mp3-tech"
+    devUsername: ""
   },
 
-  // 防止教育或經歷欄位空白導致報錯
-  education: [
-    {
-      id: 1,
-      institution: "淡江大學 (TKU)",
-      course: "資訊與圖書館學系",
-      startYear: "2024",
-      endYear: "Present"
-    }
-  ],
-  experience: [],
-
   skills: ['C++', 'PHP', 'MySQL', 'n8n', 'Python', 'Solidity', 'Git', 'Docker', 'PID Control'],
+  experience: [],
+  education: [],
   timezone: '+8',
   
   projects: [
     {
       title: "2022 全國自走車大賽季軍 (InnoRacer)",
       description: "獲得第18屆全國高中職組季軍。負責核心控制邏輯與 PID 參數調教，實作 13 階動態限速模型。",
-      image: "/獎狀.JPG",
-      tags: ["C++", "PID Control", "Robotics"],
+      image: "/獎狀.jpg", // 檢查：如果你的檔案是小寫 .jpg，這裡也要改小寫
+      tags: ["C++", "PID Control"],
       github: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization",
       link: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization"
     },
@@ -66,14 +53,6 @@ export const userData = {
       tags: ["Digital Archiving", "Information Retrieval"],
       github: "https://www.youtube.com/watch?v=JSOfh_9FYsM",
       link: "https://www.youtube.com/watch?v=JSOfh_9FYsM"
-    },
-    {
-        title: "UniGov Web3 投票系統",
-        description: "PHP/MySQL 後端業務邏輯與 Solidity 智慧合約實作。",
-        image: "",
-        tags: ["PHP", "Solidity", "Web3"],
-        github: "https://github.com/mp3-tech/Academic-Portfolio",
-        link: "https://github.com/mp3-tech/Academic-Portfolio"
     }
   ]
 };
