@@ -1,16 +1,12 @@
 export const userData = {
   githubUser: 'mp3-tech', 
-  devUsername: "mp3-tech", // 拿掉中文，避免 API 抓取錯誤
+  devUsername: "mp3-tech",
   github: 'https://github.com/mp3-tech', 
-  
-  // ▼▼▼ 導致 auth 報錯的元凶就是缺少這些！我幫你全部填上安全網址 ▼▼▼
   facebook: 'https://github.com/mp3-tech',
   linkedIn: 'https://github.com/mp3-tech',
   twitter: 'https://github.com/mp3-tech',
   stackOverflow: 'https://github.com/mp3-tech',
   leetcode: 'https://github.com/mp3-tech',
-  // ▲▲▲ ==================================================== ▲▲▲
-
   resume: "https://drive.google.com/file/d/1JTIlvBaNX7q4mSlPo9y3yXnVApGP68On/view?usp=sharing", 
   skills: [
     'C++', 'PHP', 'MySQL', 'n8n', 'Python', 'Solidity',
@@ -22,7 +18,7 @@ export const userData = {
     {
       title: "2022 全國自走車大賽季軍 (InnoRacer)",
       description: "獲得第18屆全國高中職組季軍。負責核心控制邏輯與 PID 參數調教，實作 13 階動態限速模型，提升車輛在高速行駛下的循跡穩定性。",
-      image: "/award.png", // 已修正為小寫，確保 Vercel 抓得到
+      image: "/award.png",
       tags: ["C++", "PID Control", "Robotics", "Optimization"],
       github: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization",
       link: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization"
@@ -34,6 +30,14 @@ export const userData = {
       tags: ["Digital Archiving", "Information Retrieval"],
       github: "https://www.youtube.com/watch?v=JSOfh_9FYsM",
       link: "https://www.youtube.com/watch?v=JSOfh_9FYsM"
+    },
+    {
+      title: "會員制電子商務購物系統 (PHP & MySQL)",
+      description: "基於 PHP 與 MySQL 開發的完整電商系統。實作 RBAC 權限控管（消費者、會員、管理員）、產品動態 CRUD 管理，並完成資料庫關聯設計與正規化實作。",
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop",
+      tags: ["PHP", "MySQL", "Database Design", "RBAC", "CRUD"],
+      github: "https://github.com/mp3-tech/php-mysql-ecommerce",
+      link: "https://github.com/mp3-tech/php-mysql-ecommerce"
     }
   ]
 };
