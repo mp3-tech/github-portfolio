@@ -35,7 +35,7 @@ function HeroSection({ profile }) {
             >
               <BsGithub size={24} />
             </Link>
-            <Link
+            {/* <Link
               href={userData.linkedIn}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
@@ -62,7 +62,7 @@ function HeroSection({ profile }) {
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <FaTwitterSquare size={24} />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="w-full justify-center flex items-center gap-3 mt-6">
