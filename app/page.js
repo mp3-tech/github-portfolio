@@ -1,11 +1,11 @@
 import React from "react";
-import ContainerBlock from "@/components/ContainerBlock";
-import Hero from "@/components/Hero";
-import AboutMe from "@/components/AboutMe";
-import Experience from "@/components/Experience";
-// 註解掉會報錯的 LatestRepos
-// import LatestRepos from "@/components/LatestRepos";
+// 改用相對路徑 ../ 代表回到上一層資料夾找 components
+import ContainerBlock from "../components/ContainerBlock";
+import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe";
+import Experience from "../components/Experience";
 
+// 絕對不要導入會報錯的 LatestRepos
 export default function Home() {
   return (
     <ContainerBlock
@@ -13,8 +13,7 @@ export default function Home() {
       description="Software Engineer / Information Organization Specialist"
     >
       <Hero />
-      {/* 關閉會導致 auth 錯誤的區塊 */}
-      {/* <LatestRepos /> */}
+      {/* 這裡確保沒有 LatestRepos 元件 */}
       <AboutMe />
       <Experience />
     </ContainerBlock>
