@@ -22,7 +22,7 @@ export const userData = {
     {
       title: "2022 全國自走車大賽季軍 (InnoRacer)",
       description: "獲得第18屆全國高中職組季軍。負責核心控制邏輯與 PID 參數調教，實作 13 階動態限速模型，提升車輛在高速行駛下的循跡穩定性。",
-      image: "/award.jpg", // 已修正為小寫，確保 Vercel 抓得到
+      image: "/award.png", // 已修正為小寫，確保 Vercel 抓得到
       tags: ["C++", "PID Control", "Robotics", "Optimization"],
       github: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization",
       link: "https://github.com/mp3-tech/InnoRacer-Speed-Optimization"

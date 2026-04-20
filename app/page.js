@@ -33,7 +33,7 @@ export default async function Home() {
       <div className="flex flex-col items-center justify-center py-12 px-4">
          <h2 className="text-3xl font-bold mb-8 text-[#16f2b3]">榮譽獎項 (Awards)</h2>
          <img 
-           src="/award.jpg" 
+           src="/award.png" 
            alt="全國自走車大賽季軍獎狀" 
            className="max-w-full md:max-w-3xl rounded-xl border border-[#16f2b3] shadow-lg shadow-[#16f2b3]/20" 
          />
