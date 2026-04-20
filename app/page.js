@@ -1,9 +1,10 @@
-import ContainerBlock from "../components/ContainerBlock";
-import Hero from "../components/Hero";
-import AboutMe from "../components/AboutMe";
-import Experience from "../components/Experience";
-// 把下面這行註解掉，不抓 GitHub 動態資料就不會報錯
-// import LatestRepos from "../components/LatestRepos"; 
+import React from "react";
+import ContainerBlock from "@/components/ContainerBlock";
+import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
+import Experience from "@/components/Experience";
+// 註解掉會報錯的 LatestRepos
+// import LatestRepos from "@/components/LatestRepos";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       description="Software Engineer / Information Organization Specialist"
     >
       <Hero />
-      {/* 把下面這行也註解掉 */}
+      {/* 關閉會導致 auth 錯誤的區塊 */}
       {/* <LatestRepos /> */}
       <AboutMe />
       <Experience />
