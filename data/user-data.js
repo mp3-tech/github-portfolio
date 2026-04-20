@@ -2,8 +2,19 @@ export const userData = {
   githubUser: 'mp3-tech', 
   devUsername: "鄧凱謙 (Kai-Chien Teng)",
   github: 'https://github.com/mp3-tech', 
-
+  email: '61710mp3@gmail.com', 
+  phone: '',                    
+  address: '',                  
   resume: "https://drive.google.com/file/d/1JTIlvBaNX7q4mSlPo9y3yXnVApGP68On/view?usp=sharing", 
+  
+
+  socialLinks: {
+    instagram: '',
+    twitter: '',
+    linkedin: '',
+    facebook: '',
+  },
+
   skills: [
     'C++', 
     'PHP', 
